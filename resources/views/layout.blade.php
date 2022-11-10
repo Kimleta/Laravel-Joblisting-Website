@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FindJobNow</title>
+    <link rel="icon" type="image/x-icon" href="{{asset('images/logo/logo.svg')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
@@ -24,8 +25,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbar">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link" aria-current="page" href="#">FindJobNow</a>
+                <li class="nav-item active">   
+                  <a class="navbar-brand" href="#">
+                    <img src="{{asset('images/logo/logo.svg')}}" width="30" height="30" alt="">
+                    FindJobNow
+                  </a>
                 </li>
               </ul>
             </div>

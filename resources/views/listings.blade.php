@@ -9,11 +9,14 @@
         @foreach($listings as $listing)
         <div class="col g-2">
             <div class="card h-100">
-                <img class="card-img-top" src="..." alt="Card image cap">
+                <img class="card-img-top" src="{{asset('images/laravel.png')}}" alt="Card image cap">
                 <div class="card-body">
                     
                     <a href ="/listings/{{$listing['id']}}">
                         <h5 class="card-title">{{$listing['title']}}</h5>
+                    </a>
+                    <a href ="">
+                        <h6 class="card-subtitle mb-2 text-muted">{{$listing['company']}}</h6>
                     </a>
                     <p class="card-text">{{$listing['description']}}</p>
                 </div>
