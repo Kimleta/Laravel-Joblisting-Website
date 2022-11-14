@@ -8,8 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
+        <!-- Header -->
     <header>
-        <!-- Navbar -->
+              <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container-fluid">
             <button
@@ -26,8 +27,8 @@
             <div class="collapse navbar-collapse" id="navbar">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item active">   
-                  <a class="navbar-brand" href="#">
-                    <img src="{{asset('images/logo/logo.svg')}}" width="30" height="30" alt="">
+                  <a class="navbar-brand" href="/">
+                    <img src="{{asset('images/logo/logo_white.svg')}}" width="30" height="30" alt="">
                     FindJobNow
                   </a>
                 </li>
@@ -35,8 +36,9 @@
             </div>
           </div>
         </nav>
+          <!-- Navbar -->
     </header>
-        <!-- Navbar -->
+        <!-- Header -->
     <!-- Content -->
         <div class="container">
             @yield('content')

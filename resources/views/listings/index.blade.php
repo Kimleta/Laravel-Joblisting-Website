@@ -1,15 +1,14 @@
 @extends('layout')
 
 @section('content')
-    
-    <h1 class="text-center">{{$heading}}</h1>
+@include('partials._search')
 
     @unless(count($listings)== 0)
-    <div class="row row-cols-1 row-cols-md-4">
+    <div class="row row-cols-1 row-cols-lg-4">
         @foreach($listings as $listing)
         <div class="col g-2">
             <div class="card h-100">
-                <img class="card-img-top" src="{{asset('images/laravel.png')}}" alt="Card image cap">
+                <img class="card-img-top mx-auto d-block w-50" src="{{asset('images/laravel.png')}}" alt="Card image cap">
                 <div class="card-body">
                     
                     <a href ="/listings/{{$listing['id']}}">
@@ -18,10 +17,13 @@
                     <a href ="">
                         <h6 class="card-subtitle mb-2 text-muted">{{$listing['company']}}</h6>
                     </a>
-                    <p class="card-text">{{$listing['description']}}</p>
+                    <h6 class="card-subtitle mb-2 text-muted">{{$listing['location']}}</h6>
+                </div>
+                <div class="card-footer text-muted">
+                    <x-listing-tags :tagsCsv="$listing->tags" />
                 </div>
             </div>
-        </div>       
+        </div> 
         @endforeach 
     </div><br>
     @else
