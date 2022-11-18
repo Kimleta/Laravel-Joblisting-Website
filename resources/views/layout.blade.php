@@ -11,31 +11,18 @@
         <!-- Header -->
     <header>
               <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-mdb-toggle="collapse"
-              data-mdb-target="#navbar"
-              aria-controls="navbar"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item active">   
-                  <a class="navbar-brand" href="/">
-                    <img src="{{asset('images/logo/logo_white.svg')}}" width="30" height="30" alt="">
-                    FindJobNow
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Find Job Now</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
           <!-- Navbar -->
     </header>
         <!-- Header -->
