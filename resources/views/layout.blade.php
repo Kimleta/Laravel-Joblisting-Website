@@ -18,7 +18,7 @@
                 <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
                   <ul class="navbar-nav">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Find Job Now</a>
+                      <a class="nav-link" href="/">Find Job Now</a>
                     </li>
                   </ul>
                 </div>
@@ -34,7 +34,7 @@
 
 
     <!-- Bootstrap -->
-    <footer class="text-center text-lg-start bg-dark text-light">
+    <footer class="text-center text-lg-start bg-dark text-light fixed-bottom">
       <!-- Copyright -->
           <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
               © 2022 Copyright:
@@ -42,6 +42,7 @@
           </div>
       <!-- Copyright -->
       </footer>
+      <x-flash-message />
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>
